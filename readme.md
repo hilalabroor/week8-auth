@@ -64,7 +64,7 @@ DB_NAME=auth_jwt_db
 JWT_SECRET=rahasia_superku
 ```
 
-6. Buat database MySQL dengan script pada seed.sql:
+6. Buat database MySQL dengan script pada auth.sql:
 ```
 ```CREATE DATABASE auth_jwt_db;
 USE auth_jwt_db;
