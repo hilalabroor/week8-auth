@@ -29,8 +29,7 @@ npm init -y
 3. Install dependency:
 
 ```
-npm install express mysql2 dotenv bcrypt jsonwebtoken body-parser
-npm install --save-dev nodemon
+npm install express mysql2 dotenv jsonwebtoken bcrypt
 ```
 
 4. Buat struktur folder:
@@ -45,14 +44,14 @@ express-auth-jwt/
 │   ├── middleware/
 │   │   └── authMiddleware.js
 │   ├── routes/
-│   │   ├── authRoutes.js
-│   │   └── protectedRoutes.js
+│   │   └── authRoutes.js
 │   └── app.js
 │
 ├── .env
+├── .gitignore
 ├── package.json
-├── seed.sql
-└── screenshot/
+├── readme.md
+└── auth.sql
 ```
 
 5. Buat file .env berisi konfigurasi database dan secret key JWT:
