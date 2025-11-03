@@ -93,23 +93,29 @@ Tabel: users
 
 ## Penjelasan Bagian-Bagian Utama
 Berikut adalah penjelasan singkat untuk setiap file berdasarkan struktur proyek:
+
 1. src/config/db.js
+
 Menghubungkan aplikasi ke database MySQL menggunakan konfigurasi dari .env.
 
 2. src/controllers/authController.js
-    a. register: Menyimpan user baru dengan password terenkripsi (bcrypt).
-    b. login: Memverifikasi username dan password lalu mengembalikan token JWT.
 
-3. src/middleware/authMiddleware.js
+   a. register: Menyimpan user baru dengan password terenkripsi (bcrypt).
+
+   b. login: Memverifikasi username dan password lalu mengembalikan token JWT.
+
+4. src/middleware/authMiddleware.js
+
 Memeriksa apakah request memiliki header Authorization dengan token JWT yang valid. Jika valid, user dapat mengakses route selanjutnya.
 
-4. src/routes/authRoutes.js
+5. src/routes/authRoutes.js
+
 Menyediakan endpoint:
+    
     a. POST /api/auth/register --> Registrasi user baru
+    
     b. POST /api/auth/login --> Login user
 
-5. src/routes/protectedRoutes.js
-Endpoint GET /api/protected/profile → hanya dapat diakses jika memiliki token valid.
 
 6. src/app.js
 File utama server yang mengatur middleware global, menghubungkan semua route, serta menjalankan server pada port yang ditentukan.
@@ -118,7 +124,9 @@ File utama server yang mengatur middleware global, menghubungkan semua route, se
 
 1. Register User
 - Endpoint: POST http://localhost:5000/api/auth/register
-- Screenshot:![WhatsApp Image 2025-11-03 at 11 57 16_9d8fe26b](https://github.com/user-attachments/assets/0df4579f-32d6-4691-932d-ccf834c5e1bc)
+  
+- Screenshot:
+- ![WhatsApp Image 2025-11-03 at 11 57 16_9d8fe26b](https://github.com/user-attachments/assets/0df4579f-32d6-4691-932d-ccf834c5e1bc)
 ![WhatsApp Image 2025-11-03 at 12 09 43_20d18ac1](https://github.com/user-attachments/assets/4e646c24-ae19-44c1-a319-0ca82dc88899)
 
 
