@@ -104,11 +104,11 @@ Menghubungkan aplikasi ke database MySQL menggunakan konfigurasi dari .env.
 
    b. login: Memverifikasi username dan password lalu mengembalikan token JWT.
 
-4. src/middleware/authMiddleware.js
+3. src/middleware/authMiddleware.js
 
 Memeriksa apakah request memiliki header Authorization dengan token JWT yang valid. Jika valid, user dapat mengakses route selanjutnya.
 
-5. src/routes/authRoutes.js
+4. src/routes/authRoutes.js
 
 Menyediakan endpoint:
     
@@ -117,7 +117,7 @@ Menyediakan endpoint:
     b. POST /api/auth/login --> Login user
 
 
-6. src/app.js
+5. src/app.js
 File utama server yang mengatur middleware global, menghubungkan semua route, serta menjalankan server pada port yang ditentukan.
 
 ## Hasil Uji API dengan Postman
