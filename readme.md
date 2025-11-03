@@ -118,16 +118,26 @@ File utama server yang mengatur middleware global, menghubungkan semua route, se
 ## Hasil Uji API dengan Postman
 
 1. Register User
-Endpoint: POST http://localhost:5000/api/auth/register
-Screenshot:
+- Endpoint: POST http://localhost:5000/api/auth/register
+- Screenshot:![WhatsApp Image 2025-11-03 at 11 57 16_9d8fe26b](https://github.com/user-attachments/assets/0df4579f-32d6-4691-932d-ccf834c5e1bc)
+![WhatsApp Image 2025-11-03 at 12 09 43_20d18ac1](https://github.com/user-attachments/assets/4e646c24-ae19-44c1-a319-0ca82dc88899)
+
+
 
 2. Login User
-Endpoint: POST http://localhost:5000/api/auth/login
-Screenshot:
+- Endpoint: POST http://localhost:5000/api/auth/login
+- Screenshot:
+![WhatsApp Image 2025-11-03 at 12 11 22_0d538bad](https://github.com/user-attachments/assets/bb540a6f-5e94-42cf-92fa-717b20cf5cac)
+![WhatsApp Image 2025-11-03 at 12 10 48_d62c937c](https://github.com/user-attachments/assets/6219399f-0d1a-4a31-89cc-c69499b87077)
+
 
 3. Akses Profil (Protected Route)
-Endpoint: GET http://localhost:5000/api/protected/profile
-Screenshot:
+- Endpoint: GET http://localhost:5000/api/protected/profile
+- Screenshot:
+<img width="1432" height="878" alt="image" src="https://github.com/user-attachments/assets/b2d1c007-c82d-447c-bbe9-e8169c5007fb" />
+<img width="1438" height="921" alt="image" src="https://github.com/user-attachments/assets/a886f93d-8285-42d7-9581-7ebf21a2e3bb" />
+
+
 
 ## Kesimpulan
 Program ini sudah berhasil menerapkan sistem autentikasi JWT (JSON Web Token) menggunakan Node.js, Express, dan MySQL. User bisa melakukan registrasi, login, serta mengakses route yang dilindungi dengan token yang valid. Fitur hashing password dengan bcrypt dan penggunaan dotenv untuk menyimpan konfigurasi rahasia memastikan sistem lebih aman.
